@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>lil polack seine opps</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Verdana', sans-serif;
+            background: radial-gradient(circle, #000000, #0f172a);
+            color: #e0f7ff;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 30px;
+            background: rgba(15, 23, 42, 0.85);
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(0,255,200,0.3);
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 38px;
+            color: #00ffd5;
+            text-shadow: 0 0 10px #00ffd5;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 28px;
+            color: #ff00c8;
+            text-shadow: 0 0 8px #ff00c8;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        li::marker {
+            color: #00ffd5;
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #00ffd5, transparent);
+            margin: 30px 0;
+        }
+
+        /* 💸 Geld Animation */
+        .money {
+            position: fixed;
+            top: -50px;
+            font-size: 24px;
+            animation: fall linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(110vh);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 🎵 Hintergrundmusik -->
+<audio autoplay loop>
+    <source src="musik.mp3" type="audio/mpeg">
+</audio>
+
+<!-- 💸 Geld-Elemente -->
+<script>
+    for (let i = 0; i < 25; i++) {
+        let money = document.createElement("div");
+        money.classList.add("money");
+        money.innerHTML = "💸";
+
+        money.style.left = Math.random() * 100 + "vw";
+        money.style.animationDuration = (3 + Math.random() * 5) + "s";
+        money.style.fontSize = (20 + Math.random() * 30) + "px";
+
+        document.body.appendChild(money);
+    }
+</script>
+
+<div class="container">
+    <h1>lil polack seine opps</h1>
+
+    <ul>
+        <li>OS sigma</li>
+        <li>OS sigeon pex</li>
+        <li>DD sabubu lex (Verräter)</li>
+        <li>Polack Killer</li>
+    </ul>
+
+    <div class="divider"></div>
+
+    <h2>Fly High</h2>
+
+    <ul>
+        <li>big polack</li>
+        <li>DD osapolack</li>
+        <li>lil dih</li>
+        <li>DD osamahuenson</li>
+        <li>lil itack</li>
+        <li>huge itack</li>
+    </ul>
+</div>
+
+</body>
+</html>
